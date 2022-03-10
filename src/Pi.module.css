@@ -1,0 +1,7 @@
+.pi {
+  color: green;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-wrap: break-word;
+}
