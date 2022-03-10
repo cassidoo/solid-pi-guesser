@@ -11,11 +11,12 @@ export default function InputComponent(props) {
   const [message, setMessage] = createSignal("");
 
   return (
-    <div>
+    <div class={styles.guess}>
       {/* You need to pass the signal but not call it here,
           call it in the component that needs to re-render */}
-      {`You've guessed ${numberOfDigitsGuessed()} digits so far!`} <br />
+      <div>You've guessed {numberOfDigitsGuessed()} digits so far!</div>
       <input
+        class={styles.input}
         type="text"
         placeholder="Next digit!"
         value={currentGuess()}
@@ -37,7 +38,9 @@ export default function InputComponent(props) {
           }
         }}
       />
-      <marquee class={styles.message}>{message}</marquee>
+      {message.length > 0 && (
+        <marquee class={styles.message}>{message}</marquee>
+      )}
     </div>
   );
 }
