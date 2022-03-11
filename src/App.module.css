@@ -1,19 +1,35 @@
 .App {
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 2em;
   text-align: center;
   position: relative;
+}
+
+.lives {
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 0 5px;
+  transition: padding 0.5s;
 }
 
 .footer {
   position: fixed;
   bottom: 0;
   padding: 10px;
+  box-sizing: border-box;
   width: 100%;
   font-size: 0.8rem;
-  background-color: #ccddee;
-}
-
-.link {
-  color: #b318f0;
+  border-top: 1px solid white;
+  background: var(--background);
+  color: white;
+  overflow-wrap: break-word;
 }

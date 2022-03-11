@@ -1,6 +1,13 @@
 .pi {
-  color: green;
   max-width: 300px;
   margin: 0 auto;
   overflow-wrap: break-word;
+}
+
+.pi35 {
+  font-size: 28px;
+}
+
+.pi60 {
+  font-size: 22px;
 }

@@ -17,7 +17,7 @@ export default function InputComponent(props) {
       <div>You've guessed {numberOfDigitsGuessed()} digits so far!</div>
       <input
         class={styles.input}
-        type="text"
+        type="number"
         placeholder="Next digit!"
         value={currentGuess()}
         onInput={(e) => {
@@ -38,9 +38,7 @@ export default function InputComponent(props) {
           }
         }}
       />
-      {message.length > 0 && (
-        <marquee class={styles.message}>{message}</marquee>
-      )}
+      <marquee class={styles.message}>{message}</marquee>
     </div>
   );
 }
